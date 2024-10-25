@@ -11,6 +11,7 @@ body{
   display: flex;
   color: white;
   justify-content: space-between;
+  
 }
 .logo{
   margin-left: 20px ;
@@ -34,6 +35,7 @@ h1{
 }
 .listado{
   display: none;
+  cursor: pointer;
 }
 .Ordenar{
   margin: 0;
@@ -60,6 +62,7 @@ select {
   border-radius: 3px;
   font-size: 14px;
   color: grey;
+  cursor: pointer;
 }
 .Galeria{
   grid-area: Galeria;
@@ -110,6 +113,7 @@ select {
   color: white;
   border-color: transparent;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .Paginas{
@@ -118,7 +122,6 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .Paginas p{
   border: 1px solid  rgb(225, 225, 225);
@@ -127,6 +130,7 @@ select {
   justify-content: center;
   font-size: 18px;
   color:  rgb(113, 158, 251);
+  cursor: pointer;
 }
 .Footer{
   background-color: rgb(1, 47, 107);
@@ -141,6 +145,9 @@ select {
   margin: 0;
   padding: 0;
   font-size: 18px;
+}
+.redesSociales{
+  cursor: pointer;
 }
 .grid-container{
   display: grid;
