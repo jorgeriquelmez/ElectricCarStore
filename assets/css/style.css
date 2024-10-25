@@ -66,13 +66,17 @@ select {
 }
 .Galeria{
   grid-area: Galeria;
-  background-color: white;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.imagenes{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px;
   overflow-y: scroll;
 }
 .card{
@@ -118,7 +122,6 @@ select {
 
 .Paginas{
   background-color:white;
-  grid-area: Paginas;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,15 +155,14 @@ select {
 .grid-container{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 60px calc(100vh - 240px) 60px 60px;
+  grid-template-rows: 80px 80px calc(100vh - 240px) 80px;
   grid-template-areas: 
     'NavBar'
     'Ordenar'
     'Galeria'
-    'Paginas'
     'Footer'
     ;
-  overflow-y: scroll;
+ 
 
 }
 @media (min-width : 576px) {
@@ -171,7 +173,7 @@ select {
     grid-template-areas: 
       'NavBar NavBar'
       'Ordenar Galeria'
-      'Ordenar Paginas'
+      'Ordenar Galeria'
       'Footer Footer'
       ;  
   } 
@@ -214,7 +216,7 @@ select {
       'NavBar Ordenar'
       'NavBar Galeria'
       'Footer Galeria'
-      'Footer Paginas'
+      'Footer Galeria'
       ;  
   } 
   .NavBar{
@@ -267,7 +269,7 @@ select {
     grid-template-areas: 
       'NavBar Ordenar'
       'NavBar Galeria'
-      'NavBar Paginas'
+      'NavBar Galeria'
       'Footer Footer'
       ;  
   } 
